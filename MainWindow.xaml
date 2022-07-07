@@ -1,0 +1,48 @@
+﻿<Window x:Class="SimpleUrlShortern.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleUrlShortern"
+        mc:Ignorable="d"
+        Title="Url shinker"
+        Height="450" 
+        Width="800"
+        Background="#323232"
+        Foreground="#FFAC41"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock
+            Text=" Copy the link and press shrink"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="27"
+            x:Name="link"
+            Grid.Column="1"
+                 Grid.Row="1"
+                
+                 />
+        <Button Grid.Column="1"
+                Grid.Row="2"
+                Content="Shrink"
+                FontSize="30"
+                Click="Button_Click"
+                Background="#3C4F65"
+                />
+
+
+
+
+    </Grid>
+</Window>
